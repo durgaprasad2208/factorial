@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/durgaprasad2208/factorial.git'
+                git branch: 'main', url: 'https://github.com/durgaprasad2208/factorial.git'
             }
         }
 
         stage('Run Python Code') {
             steps {
-                bat 'python factorial.py'
+                bat 'python factorial.py 5'
             }
         }
     }
