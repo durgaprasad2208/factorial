@@ -1,4 +1,4 @@
-n = int(input("Enter a number: "))
+n = 5   # fixed value
 
 fact = 1
 if n < 0:
